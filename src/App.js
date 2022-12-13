@@ -1,10 +1,14 @@
-import Header from "./Header";
+import Footer from "./Footer/Footer";
+import Header from "./Header/Header";
+import Main from "./Main/Main";
 import "./styles.scss";
 
 function App() {
   return (
     <>
       <Header />
+      <Main />
+      <Footer />
     </>
   );
 }

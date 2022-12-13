@@ -1,5 +1,5 @@
-import logo from "./images/logo.svg";
-import Nav from "./Nav";
+import logo from "../images/logo.svg";
+import Nav from "../Nav";
 const Header = () => {
   const handleClick = () => {
     document.querySelector(".hamburger").classList.toggle("open");
