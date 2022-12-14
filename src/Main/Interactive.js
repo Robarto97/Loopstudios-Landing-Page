@@ -6,7 +6,7 @@ const Interactive = () => {
     <section className="interactive_section">
       <div className="img-wrapper">
         <picture>
-          <source media="(min-width:376px)" srcSet={interactiveDesktop} />
+          <source media="(min-width:375px)" srcSet={interactiveDesktop} />
           <img src={interactiveMobile} alt="" />
         </picture>
       </div>
