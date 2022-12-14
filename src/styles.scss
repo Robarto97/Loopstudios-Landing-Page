@@ -404,14 +404,18 @@ footer {
   }
   footer {
     padding: 3rem 10%;
-    height: 27vh;
-    align-items: flex-start;
-    flex-wrap: wrap;
+    height: 25vh;
+    display: grid;
+    grid-template-areas:
+      "Logo Icons"
+      "Items Rights";
     margin-top: 10%;
     .logo {
-      width: 15%;
+      width: 25%;
+      grid-area: Logo;
     }
     .items {
+      grid-area: Items;
       flex-direction: row;
       gap: 2.5rem;
       width: 40%;
@@ -436,6 +440,8 @@ footer {
     }
     .icons {
       margin-top: unset;
+      margin-left: auto;
+      grid-area: Icons;
       align-self: flex-end;
       gap: 1.25rem;
       .icon {
@@ -459,7 +465,8 @@ footer {
       }
     }
     .rights {
-      align-self: flex-end;
+      text-align: right;
+      grid-area: Rights;
       margin-top: unset;
       font-size: 1.1rem;
     }
